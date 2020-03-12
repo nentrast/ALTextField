@@ -3,13 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A57D5D700C3EF1E079F89E7 /* Pods_ALTextField_ALTextFieldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC69EC8B2EC1FD1969380E2F /* Pods_ALTextField_ALTextFieldTests.framework */; };
+		69E619E60FAA4F53CD713A12 /* Pods_ALTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06BA8114E13220CAE7E4AEC /* Pods_ALTextField.framework */; };
 		A8D9A8AD241A3799000815AD /* ALTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D9A8A3241A3799000815AD /* ALTextField.framework */; };
 		A8D9A8B2241A3799000815AD /* ALTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9A8B1241A3799000815AD /* ALTextFieldTests.swift */; };
 		A8D9A8B4241A3799000815AD /* ALTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = A8D9A8A6241A3799000815AD /* ALTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8D9A8BE241A3802000815AD /* ALTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9A8BD241A3802000815AD /* ALTextField.swift */; };
+		A8D9A8C0241A5E81000815AD /* AlValidationRuleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9A8BF241A5E81000815AD /* AlValidationRuleType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +27,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C2E12C2B4D56C8784D65825 /* Pods-ALTextField-ALTextFieldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALTextField-ALTextFieldTests.release.xcconfig"; path = "Target Support Files/Pods-ALTextField-ALTextFieldTests/Pods-ALTextField-ALTextFieldTests.release.xcconfig"; sourceTree = "<group>"; };
+		46B08ABC46AFD58B6AD0EB0F /* Pods-ALTextField-ALTextFieldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALTextField-ALTextFieldTests.debug.xcconfig"; path = "Target Support Files/Pods-ALTextField-ALTextFieldTests/Pods-ALTextField-ALTextFieldTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7CADA439F4DE1F57456E5FB3 /* Pods-ALTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALTextField.debug.xcconfig"; path = "Target Support Files/Pods-ALTextField/Pods-ALTextField.debug.xcconfig"; sourceTree = "<group>"; };
 		A8D9A8A3241A3799000815AD /* ALTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ALTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D9A8A6241A3799000815AD /* ALTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALTextField.h; sourceTree = "<group>"; };
 		A8D9A8A7241A3799000815AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8D9A8AC241A3799000815AD /* ALTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D9A8B1241A3799000815AD /* ALTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALTextFieldTests.swift; sourceTree = "<group>"; };
 		A8D9A8B3241A3799000815AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8D9A8BD241A3802000815AD /* ALTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALTextField.swift; sourceTree = "<group>"; };
+		A8D9A8BF241A5E81000815AD /* AlValidationRuleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlValidationRuleType.swift; sourceTree = "<group>"; };
+		B06BA8114E13220CAE7E4AEC /* Pods_ALTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC69EC8B2EC1FD1969380E2F /* Pods_ALTextField_ALTextFieldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALTextField_ALTextFieldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7DB22553F62E908120FBDF /* Pods-ALTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALTextField.release.xcconfig"; path = "Target Support Files/Pods-ALTextField/Pods-ALTextField.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69E619E60FAA4F53CD713A12 /* Pods_ALTextField.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +57,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8D9A8AD241A3799000815AD /* ALTextField.framework in Frameworks */,
+				3A57D5D700C3EF1E079F89E7 /* Pods_ALTextField_ALTextFieldTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F5CCEF1CDC5CEEE171C3C8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B06BA8114E13220CAE7E4AEC /* Pods_ALTextField.framework */,
+				BC69EC8B2EC1FD1969380E2F /* Pods_ALTextField_ALTextFieldTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A8D9A899241A3799000815AD = {
 			isa = PBXGroup;
 			children = (
 				A8D9A8A5241A3799000815AD /* ALTextField */,
 				A8D9A8B0241A3799000815AD /* ALTextFieldTests */,
 				A8D9A8A4241A3799000815AD /* Products */,
+				B5CFDDBA4B97652DE0682CC8 /* Pods */,
+				6F5CCEF1CDC5CEEE171C3C8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +96,10 @@
 		A8D9A8A5241A3799000815AD /* ALTextField */ = {
 			isa = PBXGroup;
 			children = (
+				A8D9A8BD241A3802000815AD /* ALTextField.swift */,
 				A8D9A8A6241A3799000815AD /* ALTextField.h */,
 				A8D9A8A7241A3799000815AD /* Info.plist */,
+				A8D9A8BF241A5E81000815AD /* AlValidationRuleType.swift */,
 			);
 			path = ALTextField;
 			sourceTree = "<group>";
@@ -84,6 +111,17 @@
 				A8D9A8B3241A3799000815AD /* Info.plist */,
 			);
 			path = ALTextFieldTests;
+			sourceTree = "<group>";
+		};
+		B5CFDDBA4B97652DE0682CC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CADA439F4DE1F57456E5FB3 /* Pods-ALTextField.debug.xcconfig */,
+				FB7DB22553F62E908120FBDF /* Pods-ALTextField.release.xcconfig */,
+				46B08ABC46AFD58B6AD0EB0F /* Pods-ALTextField-ALTextFieldTests.debug.xcconfig */,
+				1C2E12C2B4D56C8784D65825 /* Pods-ALTextField-ALTextFieldTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +142,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8D9A8B7241A3799000815AD /* Build configuration list for PBXNativeTarget "ALTextField" */;
 			buildPhases = (
+				5CCE54DC70FB22875C87FA0F /* [CP] Check Pods Manifest.lock */,
 				A8D9A89E241A3799000815AD /* Headers */,
 				A8D9A89F241A3799000815AD /* Sources */,
 				A8D9A8A0241A3799000815AD /* Frameworks */,
@@ -122,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8D9A8BA241A3799000815AD /* Build configuration list for PBXNativeTarget "ALTextFieldTests" */;
 			buildPhases = (
+				5C3DCA34C8842E26A20AEC32 /* [CP] Check Pods Manifest.lock */,
 				A8D9A8A8241A3799000815AD /* Sources */,
 				A8D9A8A9241A3799000815AD /* Frameworks */,
 				A8D9A8AA241A3799000815AD /* Resources */,
+				D0E39DD8FE2BF2BCED6EBE0F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +189,7 @@
 				TargetAttributes = {
 					A8D9A8A2241A3799000815AD = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					A8D9A8AB241A3799000815AD = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -190,11 +232,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C3DCA34C8842E26A20AEC32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ALTextField-ALTextFieldTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CCE54DC70FB22875C87FA0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ALTextField-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0E39DD8FE2BF2BCED6EBE0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ALTextField-ALTextFieldTests/Pods-ALTextField-ALTextFieldTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ALTextField-ALTextFieldTests/Pods-ALTextField-ALTextFieldTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ALTextField-ALTextFieldTests/Pods-ALTextField-ALTextFieldTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A8D9A89F241A3799000815AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8D9A8BE241A3802000815AD /* ALTextField.swift in Sources */,
+				A8D9A8C0241A5E81000815AD /* AlValidationRuleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +447,9 @@
 		};
 		A8D9A8B8241A3799000815AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CADA439F4DE1F57456E5FB3 /* Pods-ALTextField.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PG7L77DKWJ;
@@ -348,6 +458,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ALTextField/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +467,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = validatable.textield.ALTextField;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,7 +476,9 @@
 		};
 		A8D9A8B9241A3799000815AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB7DB22553F62E908120FBDF /* Pods-ALTextField.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PG7L77DKWJ;
@@ -372,6 +487,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ALTextField/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,6 +496,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = validatable.textield.ALTextField;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -387,7 +504,9 @@
 		};
 		A8D9A8BB241A3799000815AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46B08ABC46AFD58B6AD0EB0F /* Pods-ALTextField-ALTextFieldTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PG7L77DKWJ;
 				INFOPLIST_FILE = ALTextFieldTests/Info.plist;
@@ -405,7 +524,9 @@
 		};
 		A8D9A8BC241A3799000815AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C2E12C2B4D56C8784D65825 /* Pods-ALTextField-ALTextFieldTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PG7L77DKWJ;
 				INFOPLIST_FILE = ALTextFieldTests/Info.plist;
