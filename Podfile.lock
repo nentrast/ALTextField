@@ -1,0 +1,16 @@
+PODS:
+  - Validator (3.2.1)
+
+DEPENDENCIES:
+  - Validator (~> 3.2)
+
+SPEC REPOS:
+  trunk:
+    - Validator
+
+SPEC CHECKSUMS:
+  Validator: 80a6f567220c962dfd2d9928ae98a8c1d164f6f4
+
+PODFILE CHECKSUM: c145a1ec862f23c00291a6f86a5a08f6505cb032
+
+COCOAPODS: 1.8.3
