@@ -25,10 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-                  This is textfield nothing more
+                  This is textfield nothing more that can show error
                    DESC
 
-  spec.homepage     = "http://github/ALTextField"
+  spec.homepage     = "https://github.com/nentrast/ALTextField.git"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://github/ALTextField.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/nentrast/ALTextField.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
